@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-end</title>
-    <script type="importmap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trader</title>
+  <script type="importmap">
     {
       "imports": {
         "@brtmvdl/frontend": "./libs/@brtmvdl/frontend/src/index.js"
@@ -15,16 +15,16 @@
 </head>
 
 <body>
-    <div id="app"></div>
-    <script type="module">
-      import { HTML } from '@brtmvdl/frontend'
-      import { App } from './index.js'
+  <div id="app"></div>
+  <script type="module">
+    import { HTML } from '@brtmvdl/frontend'
+    import { App } from './index.js'
 
-      HTML.fromElement(document.body).setStyle('margin', '0rem')
+    HTML.fromElement(document.body).setStyle('margin', '0rem')
 
-      HTML.fromId('app').append(new HTML())
+    HTML.fromId('app').append(new App())
 
-    </script>
+  </script>
 </body>
 
 </html>
